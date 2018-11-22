@@ -13,21 +13,18 @@
 ---
 To Train the model, insert following command in terminal
 
-```python train_model.py --dataset ../datasets/SMILEsmileD \
---model output/lenet.hdf5
+```python train_model.py --dataset ../datasets/SMILEsmileD --model output/lenet.hdf5
 ```
 
 
 To detect the smile in web-cam, insert following command in terminal
 
-```python detect_smile.py --cascade haarcascade_frontalface_default.xml \
---model output/lenet.hdf5
+```python detect_smile.py --cascade haarcascade_frontalface_default.xml --model output/lenet.hdf5
 ```
 
 To detect the smile in video, insert following command in terminal
 ```
-python detect_smile.py --cascade haarcascade_frontalface_default.xml \
---model output/lenet.hdf5 --video path/to/your/video.mov
+python detect_smile.py --cascade haarcascade_frontalface_default.xml --model output/lenet.hdf5 --video path/to/your/video.mov
 
 ```
 
